@@ -1,3 +1,10 @@
+
+<?php
+/**
+ * Pie de página global del sitio.
+ */
+?>
+  
   <!-- FOOTER -->
    <footer class="bg-[#101014] text-white relative mt-12 border-t-4 border-agro-green transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
@@ -227,5 +234,8 @@ function cerrarInfo() {
     }, 300);
 }
     </script>
+
+    <?php wp_footer(); ?>
 </body>
 </html>
+<?php get_footer(); ?>

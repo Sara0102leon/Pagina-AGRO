@@ -1,21 +1,4 @@
-<?php
-/**
- * vista/layout/header.php
- * -----------------------------------------------------------------
- * Encabezado global del sitio "Gente lo Nuestro Agro".
- * Incluye: <head> (metadatos, fuentes, Tailwind + configuración, estilos
- * custom), la barra de navegación superior y el menú lateral responsivo.
- *
- * Este archivo se incluye al inicio de cada vista (ej. desde index.php
- * o desde el controlador correspondiente). El contenido propio de cada
- * página va DESPUÉS de este include, y footer.php cierra el documento.
- * -----------------------------------------------------------------
- */
 
-if (!defined('BASE_URL')) {
-    define('BASE_URL', '/AgroGLN');
-}
-?>
 <!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
@@ -80,6 +63,9 @@ if (!defined('BASE_URL')) {
             animation: bounceIn 0.65s cubic-bezier(0.25, 1, 0.5, 1) forwards;
         }
     </style>
+    
+   <?php wp_head(); // OBLIGATORIO PARA WORDPRESS ?>
+
 </head>
 <body class="bg-base text-white font-sans antialiased selection:bg-agro-green selection:text-base transition-colors duration-300">
 

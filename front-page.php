@@ -1,4 +1,9 @@
-  <!-- HERO CARRUSEL -->
+<?php 
+get_header(); // Esto llama automáticamente a header.php de forma limpia
+?>
+ 
+ 
+ <!-- HERO CARRUSEL -->
     <section class="relative w-full h-[25vh] sm:h-[55vh] lg:h-[65vh] overflow-hidden group">
         <div id="carrusel-track" class="flex w-full h-full transition-transform duration-700 ease-in-out">
             <div class="relative min-w-full h-full flex items-center justify-center text-center">
